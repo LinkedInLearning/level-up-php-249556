@@ -33,7 +33,7 @@
 	<head>
 		<title>Login</title>
 		<meta name="author" value="Joe Casabona" />
-		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<main>
