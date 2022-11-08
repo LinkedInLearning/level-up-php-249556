@@ -1,5 +1,5 @@
 # Level Up: PHP 
-This is the repository for the LinkedIn Learning course Level Up: PHP . The full course is available from [LinkedIn Learning][lil-course-url].
+This is the repository for the LinkedIn Learning course Level Up: PHP. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![Level Up: PHP ][lil-thumbnail-url]
 
