@@ -12,5 +12,5 @@ Joe Casabona
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/joe-casabona?u=104).
 
 [lil-course-url]: https://www.linkedin.com/learning/level-up-php
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/C560DAQF27CzXEuDZ1A/learning-public-crop_675_1200/0/1666299152749?e=1667952000&v=beta&t=rQiTKeNAY-hvLa2XbR56Abk3Z7zZY8NNbIT1LrpN_vs
+[lil-thumbnail-url]: https://cdn.lynda.com/course/2494566/2494566-1667864388323-16x9.jpg
 [gcs-video-url]: https://www.linkedin.com/learning/level-up-php/using-github-codespaces-with-this-course
