@@ -50,6 +50,19 @@ function process_form() {
 					<label for="something_else">Something Else</label><br>
 				</div>
 				<div>
+					<label for="content_consumed">What type of content have you consumed?</label><br>
+					<input type="checkbox" id="podcast" name="content_consumed" value="podcast">
+					<label for="podcast">Podcast</label><br>
+					<input type="checkbox" id="newsletter" name="content_consumed" value="newsletter">
+					<label for="newsletter">Newsletter</label><br>
+					<input type="checkbox" id="youtube" name="content_consumed" value="youtube">
+					<label for="youtube">YouTube</label><br>
+					<input type="checkbox" id="social_media" name="content_consumed" value="social_media">
+					<label for="social_media">Social Media</label><br>
+					<input type="checkbox" id="something_else" name="content_consumed" value="something_else">
+					<label for="something_else">Something Else</label><br>
+				</div>
+				<div>
 					<input type="checkbox" value="true" name="join_mailing_list"><label for="join_mailing_list">Join the Mailing List?</label>
 				</div>
 				<div><input type="submit" name="submit" value="Send Message" /></div>
