@@ -16,11 +16,18 @@ div {
 }
 
 input,
-textarea {
+textarea,
+select {
 	width: 50%;
 	padding: 7px;
 	color: #333333;
 	font-size: 2rem;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	width: auto;
+	margin-right: 20px;
 }
 
 textarea {
