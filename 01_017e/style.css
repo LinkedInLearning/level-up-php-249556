@@ -1,12 +1,21 @@
 body {
 	background: #333333;
 	font-size: 2rem;
+	color: #FFFFFF;
 }
 main {
-	width: 600px;
+	width: 800px;
 	margin: 0 auto;
 	background: #FFFFFF;
 	padding: 30px;
+	color: #000000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
 
 div {

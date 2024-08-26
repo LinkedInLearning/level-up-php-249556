@@ -4,11 +4,16 @@ body {
 	color: #FFFFFF;
 }
 main {
-	width: 600px;
+	width: 850px;
 	margin: 0 auto;
 	background: #FFFFFF;
 	padding: 30px;
 	color: #000000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 div {

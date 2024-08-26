@@ -5,6 +5,12 @@ function print_info( $info ) {
 	echo '</pre>';
 }
 
+function build_date( $comic ) {
+	//First let's convert the number to month name: 
+	$month = DateTime::createFromFormat('!m', $comic->month)->format('F');
+	return $month . " " . $comic->day . ", " . $comic->year; 
+}
+
 function get_comic( $id = null ) {
 	if ( is_null( $id ) ) {
 		return json_decode( file_get_contents( 'http://xkcd.com/info.0.json' ) );
@@ -16,6 +22,7 @@ function get_comic( $id = null ) {
 $latest = get_comic();
 
 $total = $latest->num;
+
 $comic_id = rand(1, $total);
 
 $comic = get_comic( $comic_id );
@@ -31,10 +38,21 @@ $comic = get_comic( $comic_id );
 </head>
 <body>
 	<main>
-		<h1><?php echo $comic->title; ?></h1>
+		<h1><?php echo $comic->title; ?> (#<?php echo $comic->num; ?>)</h1>
+		<h2>Published on <?php echo build_date( $comic ); ?></h2>
 		<figure>
-			<img src="<?php echo $comic->img; ?>" alt="<?php echo $comic->alt; ?>" title="<?php echo $comic->alt; ?>" />
+			<img src="<?php echo $comic->img; ?>" alt="<?php echo $comic->alt; ?>" title="<?php echo $comic->title; ?>" />
 		</figure>
+		<section class="transcript">
+			<h3>Transcript / Written Description</h3>
+			<?php 
+				if( ! empty( $comic->transcript ) ) {
+					echo nl2br( $comic->transcript ); 
+				} else {
+					echo '<p>' . $comic->alt . '</p>';
+				}
+			?>
+		</section>
 	</main>
 </body>
 </html>
