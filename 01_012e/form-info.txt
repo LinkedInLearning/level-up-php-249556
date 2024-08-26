@@ -1,0 +1,19 @@
+2024-08-26 15:51:01
+Name: Joe Casabona
+Email: jcasabona@gmail.com
+Type of message: Something Else
+Message: This is a test to test things! 
+Heard about: newsletter
+Content consumed</b>: podcast, newsletter
+Join mailing list: true
+--------------- 
+2024-08-26 15:51:48
+Name: Joe Casabona
+Email: jcasabona@gmail.com
+Type of message: Something Else
+Message: This is a test to test things! 
+Heard about: newsletter
+Content consumed: podcast, newsletter
+Join mailing list: true
+--------------- 
+
