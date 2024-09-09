@@ -1,15 +1,15 @@
 <?php
   function search_page( $term ) {
     $page = 'content.html'; 
-    $content = file_get_contents( $page );
-    $content = strtolower( strip_tags( $content ) );
-    $needle = strpos( $content, $term );
+		$content = file_get_contents( $page ); 
+		$content = strtolower( strip_tags( $content ) ); 
+		$needle = strpos( $content, strtolower( $term ) );
 
-    if( false !== $needle ) {
-      return substr( $content, $needle-31, 62 ); // return the preceeding, and succeeding 30 characters
-    }
+		if( false !== $needle ) {
+			return substr( $content, $needle-50, strlen($term)+100 );
+		}
 
-    return "Nothing found.";
+		return "Nothing found.";
   }
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
     <body>
         <?php
           if( isset( $_GET['search'] ) ) {
-            echo search_page( $_GET['search'] );
+           echo search_page( $_GET['search'] );
           }
         ?>
         <form name="page-search" method="GET">
