@@ -1,7 +1,7 @@
 <?php 
 function process_form() { 
 	$file_content = '';
-	$file_content .= date("Y-m-d H:i:s") . "\r\n"; //Add current date and time. 
+	$file_content .= date("Y-m-d H:i:s") . "\r\n";
 
 	foreach( $_POST as $label => $value ) {
 		$label = str_replace('_', ' ', $label );
@@ -14,11 +14,11 @@ function process_form() {
 		}
 	}
 
-	$file_content .= "--------------- \r\n\r\n";
-	if ( false !== file_put_contents('form-info.txt', $file_content, FILE_APPEND | LOCK_EX) ) {
+	$file_content .= "--------------------- \r\n\r\n";
+	if ( false !== file_put_contents( 'form-info.txt', $file_content, FILE_APPEND | LOCK_EX) ) {
 		echo "<h4>Your entry has been recorded!</h4>";
 	} else {
-		echo "<h4>Hmmm. There was an error saving your entry.</h4>";
+		echo "<h4>Hmm. There was an error saving your entry.</h4>";
 	}
 } 
 

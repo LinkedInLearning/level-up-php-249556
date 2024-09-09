@@ -1,19 +1,19 @@
-2024-08-26 15:51:01
+2024-09-09 18:48:37
 Name: Joe Casabona
-Email: jcasabona@gmail.com
-Type of message: Something Else
-Message: This is a test to test things! 
+Email: joe@casabona
+Type of message: Comment
+Message: Save all the files!
 Heard about: newsletter
-Content consumed</b>: podcast, newsletter
+Content consumed: podcast, newsletter, social_media
 Join mailing list: true
---------------- 
-2024-08-26 15:51:48
-Name: Joe Casabona
-Email: jcasabona@gmail.com
-Type of message: Something Else
-Message: This is a test to test things! 
-Heard about: newsletter
-Content consumed: podcast, newsletter
-Join mailing list: true
---------------- 
+--------------------- 
+
+2024-09-09 18:49:18
+Name: Jane Doe
+Email: jane@casabona.org
+Type of message: Question
+Message: How many times can I save to this file?
+Heard about: youtube
+Content consumed: podcast, youtube
+--------------------- 
 
