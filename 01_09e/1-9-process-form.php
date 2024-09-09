@@ -1,17 +1,16 @@
 <?php 
 function process_form() {
 	foreach( $_POST as $label => $value ) {
-		$label = str_replace('_', ' ', $label );
-		if ( 'submit' !== $label ) {
-			if ( 'content consumed' !== $label ) {
-				echo '<p><b>' . ucfirst( $label ) . '</b>: ' . $value . '</p>';
+		$label = str_replace( '_', ' ', $label ); 
+		if( 'submit' !== $label ) {
+			if( 'content consumed' !== $label ) {
+				echo '<p><b>' . ucfirst( $label ) . '</b>: ' . $value . '</p>'; 
 			} else {
-				echo '<p><b>' . ucfirst( $label ) . '</b>: ' . implode(', ', $value) . '</p>';
+				echo '<p><b>' . ucfirst( $label ) . '</b>: ' . implode( ', ', $value ) . '</p>';
 			}
 		}
 	}
 } 
-
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +22,8 @@ function process_form() {
 	</head>
 	<body>
 		<main>
-		<?php
-				if ( isset( $_POST['submit'] ) ) {
+			<?php
+				if( isset( $_POST['submit'] ) ) {
 					process_form();
 				}
 			?>
