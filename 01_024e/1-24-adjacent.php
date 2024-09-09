@@ -5,23 +5,21 @@
     $stop_words = [ 'a', 'an', 'and', 'is', 'the', 'uh', 'umm' ];
     $content = preg_replace('/\b('.implode('|',$stop_words).')\b/','',$content); //Remove stop words
 
-		//remove blank entries, and then get an array with continuous indecies.
-    $words = array_values( array_filter( explode(" ", $content) ) );
+    $words = array_values( array_filter( explode( " ", $content ) ) );
 
-		for ($i = 0; $i < sizeof( $words ); $i++) {
-				$key = $words[$i];
-				if ( 0 == $i ) {
-					$adjacent[$key][] = $words[$i+1];
-				} else if ( sizeof($words) - 1 == $i ) {
-					$adjacent[$key][] = $words[$i-1];
-				} else {
-					$adjacent[$key][] = $words[$i-1];
-					$adjacent[$key][] = $words[$i+1];
-				}
+		for( $i = 0; $i < sizeof( $words ); $i++ ) {
+			$key = $words[$i]; 
+			if ( 0 == $i ) {
+				$adjacent[$key][] = $words[$i+1];
+			} else if( sizeof($words) -1 == $i ) {
+				$adjacent[$key][] = $words[$i-1];
+			} else {
+				$adjacent[$key][] = $words[$i-1];
+				$adjacent[$key][] = $words[$i+1];
+			}
 		}
-
-		return $adjacent;
     
+		return $adjacent;
   }
 
 $words = adjacent_words( 'transcript.txt' );
@@ -51,7 +49,7 @@ $words = adjacent_words( 'transcript.txt' );
 				</style>
     </head>
     <body>
-        <table>
+         <table>
 					<thead>
 						<th>Word</th>
 						<th>Adjacent Words</th>

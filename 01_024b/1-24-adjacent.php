@@ -49,18 +49,18 @@ $words = count_words( 'transcript.txt' );
 				</style>
     </head>
     <body>
-        <table>
+         <table>
 					<thead>
 						<th>Word</th>
-						<th>Count</th>
+						<th>Adjacent Words</th>
 					</thead>
 					<tbody>
 						<?php
 							$format = '<tr><td>%1$s</td><td>%2$s</td></tr>';
-							foreach( $words as $word => $count ) {
+							foreach( $words as $word => $adjacents ) {
 								printf( $format, 
 									$word, 
-									$count
+									implode(", ", $adjacents )
 								);
 							}
 						?>
