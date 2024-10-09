@@ -1,4 +1,4 @@
-<?php 
+pl<?php 
 function process_form() {
 	$email_text = "Hey! Someone filled out the form at $_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI] \r\n\n";
 	foreach( $_POST as $label => $value ) {
@@ -8,7 +8,7 @@ function process_form() {
 		}
 	}
 
-	$to = 'jcasabona@gmail.com';
+	$to = 'example@email.com';
 	$subject = 'Form Sub from ' . $name;
 
 	$headers = 'From: ' . $email . "\r\n" .
